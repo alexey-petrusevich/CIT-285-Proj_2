@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Depreciation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: powderblue;
+            }
+            .input{
+                font-family: calibri;
+                font-size: 25px;
+                text-align: center;
+                                
+            }
+            .textInput{
+                font-family: calibri;
+                font-size: 25px;
+                border-width: 10px;
+                border-color: red;
+                line-height: 150%;
+            }
+            .button{
+                font-family: calibri;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1 style="text-align: center">DEPRECIATION</h1>
+        
+        <form action="selection.jsp">
+            <div class="input">
+            Select depreciation method:
+            <br />
+            <input type="radio" name="select" value="straight" checked="checked" />Straight-line
+            <input type="radio" name="select" value="sumOfTheYearsDigits" />Sum of the year digits
+            <input type="radio" name="select" value="unitsOfProduction" />Units of production
+            <input type="radio" name="select" value="doubleDecliningBalance" />Double declining balance
+            </div>
+            <hr />
+            <br />
+            <div class="textInput">
+            Cost:
+            <br />
+            <input type="text" name="cost" />
+            <br />
+            Scrap:
+            <br />
+            <input type="text" name="scrap" />
+            <br />
+            Life:
+            <br />
+            <input type="text" name="life" />
+            <br />
+            <input style="font-family: calibri; font-size: 20px; background-color: lightgreen" type="submit" value="Submit">
+            </div>
+        </form>
+        
+    </body>
+</html>
